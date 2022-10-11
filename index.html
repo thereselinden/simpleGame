@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>Hej!</h1>
-    <p>En paragraf</p>
+    <h1>Gissa nummer!</h1>
+    <p>Spelet går ut på att du gissar på ett nummer mellan 1-10</p>
+    <p id="guesses"></p>
+    <div class="input-wrapper" id="inputWrapper">
+      <input type="number" placeholder="Nummer mellan 1-10" id="userInput" />
+      <button id="submitBtn">Gissa</button>
+    </div>
+    <button class="reset-game" id="resetGame" onclick="playAgain()">
+      Spela igen
+    </button>
   </body>
 </html>
